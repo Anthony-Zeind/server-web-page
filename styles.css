@@ -1,0 +1,81 @@
+body {
+    background: black;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+img {
+    border-radius: 50%;
+  }
+
+.profile-picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    height: auto;
+    max-width: 100px;
+  }
+
+.profile-name {
+      text-align: center;
+      padding: 30px;
+  }
+
+.links {
+      text-align: center;
+      margin-top: 20px;
+      padding: 20px;
+      border: 1px solid white;
+      border-width: 2px;
+      width: 290px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 0px;
+  }
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: color 1s; 
+}
+
+.bottom-text {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #000;
+    background: #fff;
+}
+
+.rainbow_text_animated {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+
+
+
+.blue{
+    color:blue;
+}
