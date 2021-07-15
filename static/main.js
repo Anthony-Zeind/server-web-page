@@ -26,7 +26,7 @@ const getAPI = async () => {
 
     //domainName
     domainName.innerHTML = `
-    <a style="color:white;">IP:</a>waiters.ddns.net
+    <a style="color:white;">IP: </a>waiters.ddns.net
     `
     
     // domainName.textContent = "waiters.ddns.net"
