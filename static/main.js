@@ -25,11 +25,11 @@ const getAPI = async () => {
     <a style="color:white;"> Players Online:</a> ${mcinfo.players.online}/${mcinfo.players.max} `
 
     //domainName
-    // domainName.innerHTML = `
-    // <a style="color:white;">IP:</a>
-    // ${mcinfo.ip}`
+    domainName.innerHTML = `
+    <a style="color:white;">IP:</a>waiters.ddns.net
+    `
     
-    domainName.textContent = "waiters.ddns.net"
+    // domainName.textContent = "waiters.ddns.net"
 
     //PlayersName
 
