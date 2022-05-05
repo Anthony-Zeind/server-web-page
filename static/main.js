@@ -4,8 +4,9 @@ const domainName = document.querySelector('#domainName')
 const motd = document.querySelector('#motd')
 const playerName = document.querySelector('#playersName')
 const pluginsName = document.querySelector('#plugins')
+const versionServer = document.querySelector('#versionServer')
 const mainContent = document.querySelector('#mainContent')
-const urlAPI = "https://api.mcsrvstat.us/2/181.36.178.94"
+const urlAPI = "https://api.mcsrvstat.us/2/181.37.134.160"
 
 
 const getAPI = async () => {
@@ -23,16 +24,14 @@ const getAPI = async () => {
     //currentPlayers
     playersCounter.innerHTML = `
     <a style="color:white;"> Players Online:</a> ${mcinfo.players.online}/${mcinfo.players.max} `
-
     //domainName
-    domainName.innerHTML = `
-    <a style="color:white;">IP: </a>waiters.ddns.net
-    `
-    
+    //domainName.innerHTML = `
+    //<a style="color:white;">IP: </a>zeidantmc.ddns.net`
     // domainName.textContent = "waiters.ddns.net"
 
-    //PlayersName
 
+
+    //PlayersName
     if(mcinfo.players.list){
         playerName.innerHTML = `
         <th class="text-center">
@@ -62,9 +61,11 @@ const getAPI = async () => {
     */
 
     //Motd
-    motd.innerHTML = `${mcinfo.motd.html[0]}<br> ${mcinfo.motd.html[1]}`
+    //motd.innerHTML = `${mcinfo.motd.html[0]}<br> ${mcinfo.motd.html[1]}`
+    motd.innerHTML = `${mcinfo.motd.html[0]}`
 
-    
+    //Version
+        versionServer.innerHTML =  `<a style="color:white;"> Version:</a> ${mcinfo.version} `
 
     console.log(mcinfo)
 }
