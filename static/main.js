@@ -6,7 +6,7 @@ const playerName = document.querySelector('#playersName')
 const pluginsName = document.querySelector('#plugins')
 const versionServer = document.querySelector('#versionServer')
 const mainContent = document.querySelector('#mainContent')
-const urlAPI = "https://api.mcsrvstat.us/2/181.37.134.160"
+const urlAPI = "https://api.mcsrvstat.us/2/<SERVER-IP>"
 
 
 const getAPI = async () => {
