@@ -22,8 +22,8 @@ const getAPI = async () => {
     }
 
     //Motd
-    //motd.innerHTML = `${mcinfo.motd.html[0]}<br> ${mcinfo.motd.html[1]}`
-     motd.innerHTML = `${mcinfo.motd.html[0]}`
+    motd.innerHTML = `${mcinfo.motd.html[0]}<br> ${mcinfo.motd.html[1]}`
+     //motd.innerHTML = `${mcinfo.motd.html[0]}`
 
  
 
