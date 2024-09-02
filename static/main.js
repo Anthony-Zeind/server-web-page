@@ -6,7 +6,7 @@ const playerName = document.querySelector('#playersName')
 const pluginsName = document.querySelector('#pluginsName')
 const versionServer = document.querySelector('#versionServer')
 const mainContent = document.querySelector('#mainContent')
-const urlAPI = "https://api.mcsrvstat.us/2/181.37.134.160"
+const urlAPI = "https://api.mcsrvstat.us/2/mc.zeidant.xyz"
 
 
 const getAPI = async () => {
@@ -22,8 +22,8 @@ const getAPI = async () => {
     }
 
     //Motd
-    motd.innerHTML = `${mcinfo.motd.html[0]}<br> ${mcinfo.motd.html[1]}`
-     //motd.innerHTML = `${mcinfo.motd.html[0]}`
+    // motd.innerHTML = `${mcinfo.motd.html[0]}<br> ${mcinfo.motd.html[1]}`
+     motd.innerHTML = `${mcinfo.motd.html[0]}`
 
  
 
